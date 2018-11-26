@@ -6,17 +6,19 @@
 </head>
 <body>
 <script>
-    array = [["I", "Don't", "Know"], ["Why", "This", "Matters"],["Anyway"]];
-    newArray = [];
-    function main(array){
-        for (var i=0;i<array.length; i++){
+    array = [["I", "Don't", "Know"], ["Why", "This", "Matters"], ["Anyway"]];
+    bigArray = [];
+
+    function main(array) {
+        for (var i = 0; i < array.length; i++) {
             // console.log(array[i]);
-            for (var j=0; j<array[i].length; j++){
+            for (var j = 0; j < array[i].length; j++) {
                 console.log(array[i][j]);
             }
-            newArray.push(array[i].toString());
+            var newString = "";
+            bigArray.push(newString.concat(array[i]));
         }
-        console.log(newArray)
+        console.log(bigArray)
     };
     main(array);
 </script>

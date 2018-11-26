@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    array = [["I", "Don't", "Know"], ["Why", "This", "Matters"],["Anyway"]];
+    newArray = [];
+    function main(array){
+        for (var i=0;i<array.length; i++){
+            // console.log(array[i]);
+            for (var j=0; j<array[i].length; j++){
+                console.log(array[i][j]);
+            }
+            newArray.push(array[i].toString());
+        }
+        console.log(newArray)
+    };
+    main(array);
+</script>
+
+</body>
+</html>
